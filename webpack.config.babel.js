@@ -21,6 +21,11 @@ export default {
 				loaders: ['style','css'],
 				include: path.join(__dirname, 'src'),
 			},
+			{ 
+        test: /\.(jpg|png)$/,
+        loader: "file",
+        include: path.join(__dirname, 'src'),
+      },
 		],
 	}
 };
